@@ -13,6 +13,8 @@ import Shopping from "./Ex_Shopping/Shopping";
 import Form from "./8_Form/Form";
 import Effect from "./9_Effect/Effect";
 import UserManagement from "./EX_UserManagement/UserManagement";
+import Ref from "./10_Ref/Ref";
+import CustomHooks from "./11_CustomHooks/CustomHooks";
 
 // Component: là một function return về cú pháp JSX mô tả giao diện sẽ được hiển thị
 function App() {
@@ -31,14 +33,16 @@ function App() {
     // <State />
     // <Form />
     // <Effect />
+    // <Ref />
+    // <CustomHooks />
 
     //bài tập
     // <Home />
     // <Shop />
     // <ShoeShop />
     // <StateCar />
-    // <Shopping />
-    <UserManagement />
+    <Shopping />
+    // <UserManagement />
   );
 }
 
