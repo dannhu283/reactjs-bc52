@@ -15,6 +15,8 @@ import Effect from "./9_Effect/Effect";
 import UserManagement from "./EX_UserManagement/UserManagement";
 import Ref from "./10_Ref/Ref";
 import CustomHooks from "./11_CustomHooks/CustomHooks";
+import Redux from "./12_Redux/Redux";
+import BookTicket from "./EX_BookTicket/BookTicket";
 
 // Component: là một function return về cú pháp JSX mô tả giao diện sẽ được hiển thị
 function App() {
@@ -35,14 +37,16 @@ function App() {
     // <Effect />
     // <Ref />
     // <CustomHooks />
+    // <Redux />
 
     //bài tập
     // <Home />
     // <Shop />
     // <ShoeShop />
     // <StateCar />
-    <Shopping />
+    // <Shopping />
     // <UserManagement />
+    <BookTicket />
   );
 }
 

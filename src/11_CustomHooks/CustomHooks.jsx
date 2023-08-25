@@ -10,7 +10,7 @@ export default function CustomHooks() {
     <>
       <h1 className="text-center text-primary">CustomHooks</h1>
       <hr />
-      <div className="d-flex justify-content-center">   
+      <div className="d-flex justify-content-center">
         <button className="btn btn-danger" onClick={handleDecrease}>
           -
         </button>
