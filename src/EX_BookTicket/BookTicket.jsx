@@ -18,6 +18,7 @@ export default function BookTicket() {
 
       <div className="row mb-3">
         <div className="col-md-6 border ">
+          {/* truyền props  */}
           <SeatList seats={data} />
         </div>
         <div className="col-md-6">
