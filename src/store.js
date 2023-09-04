@@ -2,14 +2,16 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./redux/reducers/counterReducer";
 
 import todosReducer from "./redux/reducers/todosReducer";
-
-import busTicketReducer from "./redux/reducers/busTickerReducer";
+import busTicketReducer from "./redux/slices/busTicketSlice";
+// import busTicketReducer from "./redux/reducers/busTickerReducer";
+import postReducer from "./redux/reducers/postReducer";
 
 const store = configureStore({
   reducer: {
     counter: counterReducer,
     todo: todosReducer,
     busTicket: busTicketReducer,
+    post: postReducer,
   },
 });
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { selectSeat } from "../redux/actions/busTicketAction";
-
+// import { selectSeat } from "../redux/actions/busTicketAction";
+import { selectSeat } from "../redux/slices/busTicketSlice";
 export default function SeatItem({ seat, isSelected }) {
   const dispatch = useDispatch();
 

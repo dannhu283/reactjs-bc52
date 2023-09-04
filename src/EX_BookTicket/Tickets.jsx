@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeSeat } from "../redux/actions/busTicketAction";
-
+// import { removeSeat } from "../redux/actions/busTicketAction";
+import { removeSeat } from "../redux/slices/busTicketSlice";
 export default function Tickets() {
   const { selectedSeats } = useSelector((state) => {
     return state.busTicket;

@@ -17,6 +17,7 @@ import Ref from "./10_Ref/Ref";
 import CustomHooks from "./11_CustomHooks/CustomHooks";
 import Redux from "./12_Redux/Redux";
 import BookTicket from "./EX_BookTicket/BookTicket";
+// import ReduxThunk from "./13_ReduxThunk/ReduxThunk";
 
 // Component: là một function return về cú pháp JSX mô tả giao diện sẽ được hiển thị
 function App() {
@@ -38,6 +39,7 @@ function App() {
     // <Ref />
     // <CustomHooks />
     // <Redux />
+    // <ReduxThunk />
 
     //bài tập
     // <Home />
