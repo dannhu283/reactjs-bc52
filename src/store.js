@@ -4,7 +4,8 @@ import counterReducer from "./redux/reducers/counterReducer";
 import todosReducer from "./redux/reducers/todosReducer";
 import busTicketReducer from "./redux/slices/busTicketSlice";
 // import busTicketReducer from "./redux/reducers/busTickerReducer";
-import postReducer from "./redux/reducers/postReducer";
+// import postReducer from "./redux/reducers/postReducer";
+import postReducer from "./redux/slices/postSlice";
 
 const store = configureStore({
   reducer: {

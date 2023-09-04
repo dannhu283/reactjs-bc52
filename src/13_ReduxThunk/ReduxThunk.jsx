@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getPosts } from "../redux/actions/postActions";
+// import { getPosts } from "../redux/actions/postActions";
+import { getPosts } from "../redux/slices/postSlice";
 
 export default function ReduxThunk() {
   const dispatch = useDispatch();
