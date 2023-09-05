@@ -6,7 +6,13 @@ export const getPosts = createAsyncThunk(
   async (params, { dispatch, getState }) => {
     try {
       const response = await axios.get(
-        " https://jsonplaceholder.typicode.com/posts"
+        " https://64a6ad14096b3f0fcc8042cd.mockapi.io/posts",
+        {
+          params: {
+            page: params.page || 1,
+            limit: 10,
+          },
+        }
       );
       return response.data;
     } catch (error) {

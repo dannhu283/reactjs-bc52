@@ -19,36 +19,31 @@ import Redux from "./12_Redux/Redux";
 import BookTicket from "./EX_BookTicket/BookTicket";
 import ReduxThunk from "./13_ReduxThunk/ReduxThunk";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeLayout from "./layouts/HomeLayout";
+import PostList from "./14_Router/PostList";
+import PostDetails from "./14_Router/PostDetails";
+
 // Component: là một function return về cú pháp JSX mô tả giao diện sẽ được hiển thị
 function App() {
   // JSX: Javascript XML là một cú pháp đặc biệt cho phép viết HTML bên trong Javascript
   return (
-    // <>
-    //   <h1>Hello BC52</h1>
-    //   <Welcome />
-    //   <Welcome />
-    //   <Profile />
-    // </>
-    // <Events />
-    // <Render />
-    // <RenderList />
-    // <Props />
-    // <State />
-    // <Form />
-    // <Effect />
-    // <Ref />
-    // <CustomHooks />
-    // <Redux />
-    <ReduxThunk />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeLayout />}>
+          <Route index element={<Home />} />
+          <Route path="shop" element={<Shopping />} />
+          <Route path="user" element={<UserManagement />} />
 
-    //bài tập
-    // <Home />
-    // <Shop />
-    // <ShoeShop />
-    // <StateCar />
-    // <Shopping />
-    // <UserManagement />
-    // <BookTicket />
+          <Route path="posts" element={<PostList />} />
+          {/* Dynamic segment */}
+          <Route path="posts/:id" element={<PostDetails />} />
+        </Route>
+
+        {/* trang not found phaỉ nằm dưới cùng */}
+        <Route path="*" element={<h1>Not Found...</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
