@@ -9,8 +9,9 @@ export const getPosts = createAsyncThunk(
         " https://64a6ad14096b3f0fcc8042cd.mockapi.io/posts",
         {
           params: {
+            userId: params.userId || undefined,
             page: params.page || 1,
-            limit: 10,
+            limit: 5,
           },
         }
       );

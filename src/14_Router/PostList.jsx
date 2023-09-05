@@ -17,19 +17,43 @@ export default function PostList() {
 
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
 
-  useEffect(() => {
-    const page = searchParams.get("page");
-    dispatch(getPosts({ page }));
-  }, [searchParams]);
-
   const handleChangePage = (page) => {
     searchParams.set("page", page);
     setSearchParams(searchParams);
   };
 
+  const handleChangeUserId = (evt) => {
+    const { value } = evt.target;
+    searchParams.set("userId", value);
+
+    searchParams.set("page", 1);
+
+    setSearchParams(searchParams);
+  };
+
+  useEffect(() => {
+    const page = searchParams.get("page");
+    const userId = searchParams.get("userId");
+    dispatch(getPosts({ page, userId }));
+  }, [searchParams]);
+
   return (
     <div>
       <h1>PostList</h1>
+
+      <select onChange={handleChangeUserId}>
+        <option value={1}> User 1</option>
+        <option value={2}> User 2</option>
+        <option value={3}> User 3</option>
+        <option value={4}> User 4</option>
+        <option value={5}> User 5</option>
+        <option value={6}> User 6</option>
+        <option value={7}> User 7</option>
+        <option value={8}> User 8</option>
+        <option value={9}> User 9</option>
+        <option value={10}> User 10</option>
+      </select>
+
       <ul>
         {posts.map((post) => {
           return (
