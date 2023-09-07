@@ -19,6 +19,9 @@ export default function HomeLayout() {
           <Link className="nav-link" to="/posts">
             Post
           </Link>
+          <Link className="nav-link" to="/styles">
+            Style
+          </Link>
         </nav>
       </div>
       <Outlet />
