@@ -22,6 +22,9 @@ export default function HomeLayout() {
           <Link className="nav-link" to="/styles">
             Style
           </Link>
+          <Link className="nav-link" to="/react-query">
+            React-query
+          </Link>
         </nav>
       </div>
       <Outlet />

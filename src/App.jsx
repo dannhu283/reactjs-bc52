@@ -24,6 +24,7 @@ import HomeLayout from "./layouts/HomeLayout";
 import PostList from "./14_Router/PostList";
 import PostDetails from "./14_Router/PostDetails";
 import Styles from "./15_Styles/Styles";
+import Reactquery from "./16_React-query/Reactquery";
 // Component: là một function return về cú pháp JSX mô tả giao diện sẽ được hiển thị
 function App() {
   // JSX: Javascript XML là một cú pháp đặc biệt cho phép viết HTML bên trong Javascript
@@ -40,6 +41,8 @@ function App() {
           <Route path="posts/:id" element={<PostDetails />} />
 
           <Route path="styles" element={<Styles />} />
+
+          <Route path="react-query" element={<Reactquery />} />
         </Route>
 
         {/* trang not found phaỉ nằm dưới cùng */}
